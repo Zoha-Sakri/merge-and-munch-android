@@ -1,14 +1,31 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
+# Android / Gradle
 .gradle/
+build/
 **/build/
 local.properties
 .idea/
 *.iml
 captures/
-.externalNativeBuild/
-.cxx/
-.DS_Store
-*.apk
-*.aab
-*.jks
-*.keystore
+
+# iOS / Xcode
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.hmap
+
+# Signing and local secrets
 *.p12
+*.mobileprovision
+*.cer
+*.key
+!.env.example
